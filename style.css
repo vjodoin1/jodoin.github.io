@@ -25,6 +25,10 @@ body, html {
     font-size: 1.5em;
     margin: 10px 0 20px;
 }
+.no-underline {
+    text-decoration: none;
+    color: inherit; /* Ensures the link takes on the button's text color */
+}
 .cta-button {
     background-color: #4CAF50;
     color: white;
@@ -37,6 +41,11 @@ body, html {
 }
 .cta-button:hover {
     background-color: #388e3c;
+}
+.cta-button a {
+    display: inline-block; /* Ensures the link is clickable */
+    text-decoration: none; /* Just in case */
+    color: inherit; /* Inherits the button's text color */
 }
 nav {
     position: fixed;
