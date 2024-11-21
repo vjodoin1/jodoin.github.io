@@ -30,6 +30,9 @@
             text-decoration: none;
             font-weight: bold;
         }
+        nav a:hover {
+            color: #4CAF50;
+        }
         section {
             padding: 20px;
             max-width: 1000px;
@@ -42,32 +45,50 @@
             background-color: #333;
             color: white;
         }
-        h2 {
-            color: #000000;
-        }
-        p {
-            line-height: 1.6;
-        }
         .projects, .experience {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
-        .card {
-            background-color: #eee;
-            padding: 15px;
-            margin: 15px;
-            border-radius: 8px;
-            flex: 1 1 calc(50% - 40px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
             .card {
                 flex: 1 1 100%;
             }
-        }
-    </style>
+}
+.cards, .experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+.card {
+    background-color: #eee;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 40px); /* Adjust card size */
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+        
+    </style>
 </head>
 <body>
     <header>
@@ -81,26 +102,34 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    
-
-    
-
-    <section class="card ">
+    <section>
         <h2>Hello!</h2>
         <img src="images/profile.png" alt="Vinny Jodoin" style="width: 150px; border-radius: 50%;">
-       
+
         <p>I am a PhD student in Mathematics with a passion for solving complex problems, teaching, and conducting research in applied and theoretical mathematics. My current research focuses on mathematical biology, and I am particularly interested in public health. In addition to my research, I enjoy mentoring students and promoting mathematical thinking to wider audiences.
 
-        I am a graduate student at the University of Tennessee. After working in the classroom for years, I decided to work and earn my masters at the same time. Pursuing a masters degree gave me the drive to want to learn more, research more, and understand how to develop models for open questions. Now, I am pursuing a PhD in Math-Biology.  Outside of school and work, you can still find me volunteering for local schools or outreach programs, helping my wife at our shop, or organizing chess events!
-        I hope we are able to connect, and thanks for visiting,
-        Vinny Jodoin
-        </p>
-
+            I am a graduate student at the University of Tennessee. After working in the classroom for years, I decided to work and earn my masters at the same time. Pursuing a masters degree gave me the drive to want to learn more, research more, and understand how to develop models for open questions. Now, I am pursuing a PhD in Math-Biology.  Outside of school and work, you can still find me volunteering for local schools or outreach programs, helping my wife at our shop, or organizing chess events!
+            I hope we are able to connect, and thanks for visiting,
+            Vinny Jodoin
+            </p>
     </section>
 
-    <section class="card ">
-        <h2>Hobbies and Interests</h2>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Quisque dui quis, ad eleifend molestie tempor. Consequat placerat dapibus cras tellus pulvinar. Finibus ligula praesent nisi nunc ad ad sem ad? Ultricies nullam elementum pulvinar purus tincidunt enim posuere dapibus iaculis. Magnis fames fusce tristique nam, tempor vitae sagittis. Dictum maximus nisl imperdiet orci libero ultrices enim.</p>
+    <section id="projects">
+
+        <div class="projects">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Description.  Lorem ipsum odor amet, consectetuer adipiscing elit. Quisque dui quis, ad eleifend molestie tempor. Consequat placerat dapibus cras tellus pulvinar. Finibus ligula praesent nisi nunc ad ad sem ad? Ultricies nullam elementum pulvinar purus tincidunt enim posuere dapibus iaculis. Magnis fames fusce tristique nam, tempor vitae sagittis. Dictum maximus nisl imperdiet orci libero ultrices enim.</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Description.  Lorem ipsum odor amet, consectetuer adipiscing elit. Quisque dui quis, ad eleifend molestie tempor. Consequat placerat dapibus cras tellus pulvinar. Finibus ligula praesent nisi nunc ad ad sem ad? Ultricies nullam elementum pulvinar purus tincidunt enim posuere dapibus iaculis. Magnis fames fusce tristique nam, tempor vitae sagittis. Dictum maximus nisl imperdiet orci libero ultrices enim.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Description.  Lorem ipsum odor amet, consectetuer adipiscing elit. Quisque dui quis, ad eleifend molestie tempor. Consequat placerat dapibus cras tellus pulvinar. Finibus ligula praesent nisi nunc ad ad sem ad? Ultricies nullam elementum pulvinar purus tincidunt enim posuere dapibus iaculis. Magnis fames fusce tristique nam, tempor vitae sagittis. Dictum maximus nisl imperdiet orci libero ultrices enim.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
